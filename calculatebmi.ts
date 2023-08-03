@@ -3,12 +3,14 @@
 const calculateBmi = (weight: number, height: number) => {
     const bmi = weight / (height / 100) ** 2;
     if (bmi < 18.5) {
-        return "Underweight";
+        console.log("Underweight");
     } else if (bmi < 25) {
-        return "Normal (healthy weight)";
+        console.log("Normal (healthy weight)");
     } else if (bmi < 30) {
-        return "Overweight";
+        console.log("Overweight");
     } else {
-        return "Obese";
+        console.log("Obese");
     }
-} 
+}
+
+calculateBmi(59, 183);
